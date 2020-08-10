@@ -18,4 +18,3 @@ def get_oid(url):
     #print(type(text))
     oid = re.search('.*baseUrl(.*)base_url.*', text)[1].split("/")[6]
     return oid
-print(get_oid("https://www.bilibili.com/video/BV13i4y147ic"))

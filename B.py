@@ -113,17 +113,17 @@ def run(url):
     b.param_page()
     b.simple_danmu()
     b.word_cloud(url['name'])
-url = {"url":"https://www.bilibili.com/video/BV1WE411d7Dv","name":"test"}
-run(url)
+# url = {"url":"https://www.bilibili.com/video/BV1WE411d7Dv","name":"test"}
+# run(url)
 
-# if __name__ == "__main__":
-#     r = get_urls.rank()
-#     index = 0
-#     for i in r.get_url():
-#         index += 1
-#         print(index, "is starting")
-#         if  index <= 2:
-#             run(i)
+if __name__ == "__main__":
+    r = get_urls.rank()
+    index = 0
+    for i in r.get_url():
+        index += 1
+        print(index, "is starting")
+        if  index <= 2:
+            run(i)
 
 # def simple_danmu(self):
 #         dic = {}
